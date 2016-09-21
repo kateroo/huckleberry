@@ -198,9 +198,9 @@ var scrollMagicController = new ScrollMagic ();
 					.setTween(hbway)
 				    .addTo(scrollMagicController)
             
-      $('#offerings-set-1').attr('data-parallax', '{"y": -15}');
-      $('#offerings-set-2').attr('data-parallax', '{"y": -65}'); 
-      $('#offerings-set-3').attr('data-parallax', '{"y": -45}');
+      //$('#offerings-set-1').attr('data-parallax', '{"y": -15}');
+      //$('#offerings-set-2').attr('data-parallax', '{"y": -65}'); 
+      //$('#offerings-set-3').attr('data-parallax', '{"y": -45}');
 
 
       // Brand Animation
