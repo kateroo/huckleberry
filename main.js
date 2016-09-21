@@ -269,9 +269,9 @@ var scrollMagicController = new ScrollMagic ();
                 $('.portfolio-item').removeClass('unselected');
                 $('.portfolio-item').removeClass('selected');
             });
-
+ $(back_1).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/573a933986d12bd946255a1b_item-8-background.jpg)');
             $('#portfolio > div > div:nth-child(1)').hover(function() {
-                $(back_1).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/573a933986d12bd946255a1b_item-8-background.jpg)');
+               
                 var lt2 = new TimelineMax();
                 lt2.to(back_1, 0.5, {
                         autoAlpha: 1
