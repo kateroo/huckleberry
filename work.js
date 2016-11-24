@@ -1,4 +1,25 @@
-    window._wq = window._wq || [];
+            $('.portfolio-item').hover(function() {
+                $(this).siblings().addClass('unselected');
+                $(this).addClass('selected');
+                var tl = new TimelineMax()
+                    .to(('.selected .portfolio-thumb'), 0.5, {
+                        scale:1.11
+                        ease: Circ.easeOut
+                    }, 0.1)
+
+            }, function() {
+                var tl = new TimelineMax()
+                     .to(('.selected .portfolio-thumb'), 0.5, {
+                        scale:1.0
+                        ease: Circ.easeOut
+                    }, 0.1)
+                $(this).removeClass('selected');
+
+            });   
+   
+
+
+window._wq = window._wq || [];
     _wq.push({
         "3t3ary677g": function(video) {
             $("#p-1").click(function() {
