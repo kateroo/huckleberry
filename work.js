@@ -3,14 +3,14 @@
                 $(this).addClass('selected');
                 var tl = new TimelineMax()
                     .to(('.selected .portfolio-thumb'), 0.5, {
-                        scale:1.11
+                        scale:1.11,
                         ease: Circ.easeOut
                     }, 0.1)
 
             }, function() {
                 var tl = new TimelineMax()
                      .to(('.selected .portfolio-thumb'), 0.5, {
-                        scale:1.0
+                        scale:1.0,
                         ease: Circ.easeOut
                     }, 0.1)
                 $(this).removeClass('selected');
