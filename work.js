@@ -30,8 +30,8 @@ window._wq = window._wq || [];
                 }
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader22').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                     if ($(this).find('.loader2').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -117,7 +117,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -203,7 +203,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -289,7 +289,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -375,7 +375,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -461,7 +461,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -547,7 +547,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -633,7 +633,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -719,7 +719,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -799,7 +799,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -880,7 +880,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
@@ -961,7 +961,7 @@ window._wq = window._wq || [];
                 if ($(window).width() >= 0) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
                         $(this).find('.loader2').show("fast");
                     }
                     var tload = new TimelineMax({
