@@ -1,16 +1,36 @@
-            $('.portfolio-item').hover(function() {
+        //Contact mobile slide
+        $("#contact-mobile,  #bottom-contact").click(function() {
+                if (($(window).scrollTop() > $('.skip-me').height()) && ($( ".skip-me" ).is( ":visible" ))){
+        //do nothing
+                } else{ 
+             $('.skip-me').slideToggle(500);
+                  $('#contact-mobile').toggleClass("grey");
+        }
+           });
+   $("#contact, #bottom-contact, #top-contact-close").click(function() {
+                if (($(window).scrollTop() > $('.top-contact').height()) && ($( ".top-contact" ).is( ":visible" ))){
+        //do nothing
+                } else{ 
+             $('.top-contact').slideToggle(500);
+                  $('#contact').toggleClass("grey");
+        }
+           });
+
+
+//Portfolio thumbnails hover
+$('.portfolio-item').hover(function() {
                 $(this).siblings().addClass('unselected');
                 $(this).addClass('selected');
                 var tl = new TimelineMax()
                     .to(('.selected .portfolio-thumb'), 0.5, {
-                        scale:1.11,
+                        scale:1.11
                         ease: Circ.easeOut
                     }, 0.1)
 
             }, function() {
                 var tl = new TimelineMax()
                      .to(('.selected .portfolio-thumb'), 0.5, {
-                        scale:1.0,
+                        scale:1.0
                         ease: Circ.easeOut
                     }, 0.1)
                 $(this).removeClass('selected');
@@ -28,20 +48,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -56,7 +76,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -73,7 +93,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -94,8 +114,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-1 .checkmark').show("fast");
@@ -114,20 +134,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -142,7 +162,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -159,7 +179,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -180,8 +200,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-2 .checkmark').show("fast");
@@ -200,20 +220,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -228,7 +248,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -245,7 +265,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -266,8 +286,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-3 .checkmark').show("fast");
@@ -286,20 +306,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -314,7 +334,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -331,7 +351,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -352,8 +372,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-4 .checkmark').show("fast");
@@ -372,20 +392,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -400,7 +420,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -417,7 +437,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -438,8 +458,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-5 .checkmark').show("fast");
@@ -458,20 +478,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -486,7 +506,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -503,7 +523,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -524,8 +544,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-6 .checkmark').show("fast");
@@ -544,20 +564,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -572,7 +592,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -589,7 +609,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -610,8 +630,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-7 .checkmark').show("fast");
@@ -630,20 +650,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -658,7 +678,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
 
@@ -675,7 +695,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
 
                                 ease: Power2.easeIn
@@ -696,8 +716,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-8 .checkmark').show("fast");
@@ -716,20 +736,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
                             }, {
@@ -743,7 +763,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
                             }, {
@@ -759,7 +779,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
                                 ease: Power2.easeIn
                             }, {
@@ -776,8 +796,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-9 .checkmark').show("fast");
@@ -796,20 +816,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
                             }, {
@@ -823,7 +843,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
                             }, {
@@ -838,7 +858,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
                                 ease: Power2.easeIn
 
@@ -857,8 +877,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-10 .checkmark').show("fast");
@@ -877,20 +897,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
 
@@ -905,7 +925,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
                             }, {
@@ -921,7 +941,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
                                 ease: Power2.easeIn
                             }, {
@@ -938,8 +958,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-11 .checkmark').show("fast");
@@ -958,20 +978,20 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() >= 0) {
+                if ($(window).width() <= 991) {
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
-                     if ($(this).find('.loader2').length == 0) {
-                        $(this).find('.portfolio-subtitle').after('<ul class="loader2"><li></li><li></li><li></li><li></li></ul>');
-                        $(this).find('.loader2').show("fast");
+                     if ($(this).find('.loader').length == 0) {
+                        $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
+                        $(this).find('.loader').show("fast");
                     }
                     var tload = new TimelineMax({
                         paused: true,
                         repeat: -1
                     });
-                    var bulina = $('.loader2 li');
+                    var bulina = $('.loader li');
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "0px",
                                 ease: Power2.easeIn
                             }, {
@@ -984,7 +1004,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.5, {
+                            $('.loader li'), 0.5, {
                                 top: "5px",
                                 ease: Power2.easeIn
                             }, {
@@ -1000,7 +1020,7 @@ window._wq = window._wq || [];
 
                     tload.add(
                         TweenMax.staggerFromTo(
-                            $('.loader2 li'), 0.4, {
+                            $('.loader li'), 0.4, {
                                 top: "-15px",
                                 ease: Power2.easeIn
                             }, {
@@ -1018,8 +1038,8 @@ window._wq = window._wq || [];
                     video.bind("popovershow", function() {
                         tload.pause()
                         tload.kill()
-                        $(this).find('.loader2').hide("fast");
-                        $('.loader2').remove();
+                        $(this).find('.loader').hide("fast");
+                        $('.loader').remove();
                     });
                     video.bind("popoverhide", function() {
                         $('#p-12 .checkmark').show("fast");
