@@ -101,7 +101,7 @@ window._wq = window._wq || [];
                         $('#p-1 .checkmark').show("fast");
                     });
                 
-            });
+            }
         }
     });
 
