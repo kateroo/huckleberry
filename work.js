@@ -28,7 +28,7 @@ window._wq = window._wq || [];
                 } else {
                     video.play();
                 }
-                if ($(window).width() <= 991) {
+      
                     $(this).find('.portfolio-thumb').fadeTo("fast", 0.5);
                      if ($(this).find('.loader').length == 0) {
                         $(this).find('.portfolio-subtitle').after('<ul class="loader"><li></li><li></li><li></li><li></li></ul>');
@@ -100,7 +100,7 @@ window._wq = window._wq || [];
                     video.bind("popoverhide", function() {
                         $('#p-1 .checkmark').show("fast");
                     });
-                };
+               
             });
         }
     });
