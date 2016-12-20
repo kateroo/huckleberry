@@ -1611,7 +1611,7 @@ window._wq = window._wq || [];
 
  window._wq = window._wq || [];
     _wq.push({
-        "9ac9876d86": function(video) {
+        "x3opayad14": function(video) {
             $("#p-20").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
