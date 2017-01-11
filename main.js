@@ -1198,7 +1198,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "zxq3ifggtz": function(video) {
+        "uemvkdqxkz": function(video) {
             $("#p-7").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
