@@ -202,7 +202,20 @@ var scrollMagicController = new ScrollMagic ();
       //$('#offerings-set-2').attr('data-parallax', '{"y": -65}'); 
       //$('#offerings-set-3').attr('data-parallax', '{"y": -45}');
 
+// Section 3: More work link
+    
+         $(".seemore").hover(over, out);
 
+         function over(){
+           TweenMax.to(this, 0.5, {backgroundColor:"red"})
+           TweenMax.to($(this).find("span"), 0.3, {rotation:360, scale:2, x:50, delay:0.6})
+         }
+         
+         function out(){
+           TweenMax.to(this, 0.5, {backgroundColor:"blue"})
+           TweenMax.to($(this).find("span"), 0.3, {rotation:0, scale:1, x:0, overwrite:"all"})
+         }
+    
       // Brand Animation
     
          scrollController = new ScrollMagic();
