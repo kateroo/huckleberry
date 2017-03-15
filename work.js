@@ -1291,7 +1291,7 @@ window._wq = window._wq || [];
 
    window._wq = window._wq || [];
     _wq.push({
-        "tae8k3qk1a": function(video) {
+        "j2sg9fax6m": function(video) {
             $("#p-16").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
