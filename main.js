@@ -1,4 +1,4 @@
-//Updated: 04/18/17
+//Updated: 04/18/17 X2
 
 //Video - Pause when it's not in view
 
