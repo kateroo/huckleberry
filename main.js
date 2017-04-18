@@ -855,7 +855,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "qb13sof5n2": function(video) {
+        "5w7mo5t100": function(video) {
             $("#p-3").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
