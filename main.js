@@ -562,7 +562,7 @@ var scrollMagicController = new ScrollMagic ();
             });
 
             $('#portfolio > div > div:nth-child(11)').hover(function() {
-                $(back_11).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/573a8122d775e472223106c7_item-5-background.jpg)');
+                $(back_11).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/58361bfbb333a5214d291857_item-16-background.jpg)');
                 var lt2 = new TimelineMax();
                 lt2.to(back_11, 0.5, {
                         autoAlpha: 1
@@ -1027,7 +1027,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "d187wbw4jy": function(video) {
+        "qojqynnd1l": function(video) {
                 $("#p-5").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
