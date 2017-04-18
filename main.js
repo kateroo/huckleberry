@@ -533,7 +533,7 @@ var scrollMagicController = new ScrollMagic ();
             });
 
             $('#portfolio > div > div:nth-child(10)').hover(function() {
-                $(back_10).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/573a6fe62d1e916e3290b7bf_item-7-background.jpg)');
+                $(back_10).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/58f65e04b45a921b9e5e6cda_item-28-background.jpg)');
                 var lt2 = new TimelineMax();
                 lt2.to(back_10, 0.5, {
                         autoAlpha: 1
