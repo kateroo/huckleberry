@@ -272,7 +272,7 @@ var scrollMagicController = new ScrollMagic ();
             });
  
             $('#portfolio > div > div:nth-child(1)').hover(function() {
-            $(back_1).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/573a933986d12bd946255a1b_item-8-background.jpg)');   
+            $(back_1).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/58f65e04b45a921b9e5e6cda_item-28-background.jpg)');   
                 var lt2 = new TimelineMax();
                 lt2.to(back_1, 0.5, {
                         autoAlpha: 1
@@ -301,7 +301,7 @@ var scrollMagicController = new ScrollMagic ();
             });
 
             $('#portfolio > div > div:nth-child(2)').hover(function() {
-                $(back_2).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/573a9958c84afe8749ae2457_item-9-background.jpg)');
+                $(back_2).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/57506ee69fbd7732523cf628_item-15-background.jpg)');
                 var lt2 = new TimelineMax();
                 lt2.to(back_2, 0.5, {
                         autoAlpha: 1
@@ -533,7 +533,7 @@ var scrollMagicController = new ScrollMagic ();
             });
 
             $('#portfolio > div > div:nth-child(10)').hover(function() {
-                $(back_10).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/58f65e04b45a921b9e5e6cda_item-28-background.jpg)');
+                $(back_10).css('background-image', 'url(https://daks2k3a4ib2z.cloudfront.net/56a6451eb627cde43307280f/57506d4afcdc27ff2e4c449d_item-14-background.jpg)');
                 var lt2 = new TimelineMax();
                 lt2.to(back_10, 0.5, {
                         autoAlpha: 1
