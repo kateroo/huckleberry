@@ -769,7 +769,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "hjkfuhwp8c": function(video) {
+        "fyd609inga": function(video) {
             $("#p-2").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
