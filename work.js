@@ -968,7 +968,7 @@ window._wq = window._wq || [];
 
     window._wq = window._wq || [];
     _wq.push({
-        "79rpfm7vs2": function(video) {
+        "hjkfuhwp8c": function(video) {
             $("#p-12").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
