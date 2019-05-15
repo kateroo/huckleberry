@@ -726,7 +726,7 @@ window._wq = window._wq || [];
 
     window._wq = window._wq || [];
     _wq.push({
-        "6348f26pnb": function(video) {
+        "h4odjqb4k2": function(video) {
             $("#p-9").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
@@ -887,7 +887,7 @@ window._wq = window._wq || [];
 
     window._wq = window._wq || [];
     _wq.push({
-        "t5swfiz0z1": function(video) {
+        "fyd609inga": function(video) {
             $("#p-11").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
@@ -1288,7 +1288,7 @@ window._wq = window._wq || [];
 
    window._wq = window._wq || [];
     _wq.push({
-        "j2sg9fax6m": function(video) {
+        "qojqynnd1l": function(video) {
             $("#p-16").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
