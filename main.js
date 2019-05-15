@@ -1,4 +1,4 @@
-//Updated: 04/18/17 X2
+//Updated: 05/15/19 X1
 
 //Video - Pause when it's not in view
 
@@ -769,7 +769,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "htfj12zxrd": function(video) {
+        "hjkfuhwp8c": function(video) {
             $("#p-2").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
@@ -1371,7 +1371,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "6348f26pnb": function(video) {
+        "h4odjqb4k2": function(video) {
             $("#p-9").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
@@ -1532,7 +1532,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "t5swfiz0z1": function(video) {
+        "fyd609inga": function(video) {
             $("#p-11").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
@@ -1613,7 +1613,7 @@ var scrollMagicController = new ScrollMagic ();
 
     window._wq = window._wq || [];
     _wq.push({
-        "79rpfm7vs2": function(video) {
+        "hjkfuhwp8c": function(video) {
             $("#p-12").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
