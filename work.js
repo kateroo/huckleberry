@@ -124,7 +124,7 @@ window._wq = window._wq || [];
 
     window._wq = window._wq || [];
     _wq.push({
-        "htfj12zxrd": function(video) {
+        "3lqjv9yhec": function(video) {
             $("#p-2").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
