@@ -1048,7 +1048,7 @@ window._wq = window._wq || [];
 
     window._wq = window._wq || [];
     _wq.push({
-        "ltq7vpz5zi": function(video) {
+        "dhd8icvt7w": function(video) {
             $("#p-13").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
