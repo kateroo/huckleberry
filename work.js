@@ -1928,7 +1928,7 @@ window._wq = window._wq || [];
 
  window._wq = window._wq || [];
     _wq.push({
-        "5c6gpqobjz": function(video) {
+        "7zwhu1jjmz": function(video) {
             $("#p-24").click(function() {
                 if (video.state() === "playing") {
                     video.pause();
